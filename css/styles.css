@@ -296,12 +296,12 @@ img {
     justify-content: space-between;
 }
 
-.work-list .item {
-    position: relative;
-}
-
 .work-list .item + .item {
     margin-left: 30px;
+}
+
+.work-box {
+    position: relative;
 }
 
 .work-item-title {
