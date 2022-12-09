@@ -8,13 +8,15 @@
     --secondary-accent-color: #188CE8;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
-
     --hero-background-color:#C4C4C4;
     --footer-background-color: #2F303A;
     --header-border-color: #ECECEC; 
     --project-border-color: #EEEEEE;
     --svg-primary-color: #AFB1B8;
     --footer-social-background-color:rgba(255, 255, 255, 0.1);
+
+    --work-overlay-color:rgba(47, 48, 58, 0.8);
+    --modal-overlay-color:rgba(0, 0, 0, 0.2);
 
     --project-card-set-gap: 30px;
 }
@@ -294,8 +296,32 @@ img {
     justify-content: space-between;
 }
 
+.work-list .item {
+    position: relative;
+}
+
 .work-list .item + .item {
     margin-left: 30px;
+}
+
+.work-item-title {
+    color: var(--accent-text-color);
+    background-color: var(--work-overlay-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
 }
 
 /* Секція "team" */
