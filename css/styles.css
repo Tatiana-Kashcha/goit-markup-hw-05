@@ -108,6 +108,8 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    position: relative;
 }
 
 .navigation-link:hover, .navigation-link:focus {
@@ -116,6 +118,18 @@ img {
 
 .navigation-link.current {
     color: var(--primary-accent-color);
+}
+
+.navigation-link.current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-accent-color);
+    position: absolute;
+    left: 0;
+    bottom: -1px;  
 }
 
 .contact {
